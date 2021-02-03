@@ -29,11 +29,18 @@
 
 * 프로젝트 압축 및 upload
 	git add .
-	git commit config --local 
+	git commit -m "집에서 HelloHomeWork"
+	클래스 만들기
+	git push 또는 git push -u origin master
+
+5. 학원에 와서 제일 먼저 할 일 (가장 중요)
+	프로젝트 폴더에서 git bash 열기
+
+	git pull
 
 ###### git commit 명령 오류 상황
 * git commit -m 까지만 입력하면 : error 발생
 * git commit 까지만 입력하면 : vi editor
 * 내용추가 1, 2
 * 내용추가 1, 2, 3
-* 내용추가 1, 2, 3
+* 깃 어렵다
