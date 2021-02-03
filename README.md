@@ -36,7 +36,7 @@
 5. 학원에 와서 제일 먼저 할 일 (가장 중요)
 	프로젝트 폴더에서 git bash 열기
 
-	git pull
+	git pull(매우 중요) : 동기화 하기
 
 ###### git commit 명령 오류 상황
 * git commit -m 까지만 입력하면 : error 발생
