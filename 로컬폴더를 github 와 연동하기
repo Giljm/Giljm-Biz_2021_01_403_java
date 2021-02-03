@@ -4,8 +4,7 @@
    git init
 
 2. 계정연결
-   git config --local user.name
-       Giljm
+   git config --local user.name Giljm
    git config --local user.email Giljm@Giljm.com
 
 3. repository 주소 연결
