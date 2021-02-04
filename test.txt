@@ -1,0 +1,19 @@
+Republic of Korea
+대한민국 만세
+우리나라만세
+viva korea
+Welcome to korea
+
+public static void main(String args[]) {
+
+syster.out.println("상한가")
+
+}
+
+
+KOSPI
+KOSDAQ
+NASDAQ
+
+
+// vi editor를 이용하여 Text 문서를 작성중
