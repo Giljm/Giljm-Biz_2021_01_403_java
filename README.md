@@ -41,6 +41,3 @@
 ###### git commit 명령 오류 상황
 * git commit -m 까지만 입력하면 : error 발생
 * git commit 까지만 입력하면 : vi editor
-* 내용추가 1, 2
-* 내용추가 1, 2, 3
-* 깃 어렵다
