@@ -5,8 +5,8 @@ public class Var_03 {
 	public static void main(String[] args) {
 		
 		int intNum1 = 0;
-		
 		intNum1 = 30;
+		
 		System.out.println(intNum1);
 		
 		System.out.println(intNum1 + 40);
