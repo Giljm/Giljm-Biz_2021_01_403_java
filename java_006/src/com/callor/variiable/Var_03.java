@@ -45,6 +45,7 @@ public class Var_03 {
 		System.out.println(intDan * num1);
 		
 		
+		
 	}
 	
 }
