@@ -24,6 +24,7 @@ public class Loop_05 {
 		intSum += i;
 	}
 	System.out.println(intSum);
+
 	
 	}
 }
