@@ -20,6 +20,9 @@ public class while_03 {
 			
 			
 			
+			
+			
+			
 			if(index > 1000) {
 				break;
 			}
