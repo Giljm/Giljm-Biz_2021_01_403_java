@@ -1,0 +1,25 @@
+package com.callo.start;
+
+public class Odd_Even_01 {
+
+	public static void main(String[] args) {
+
+		int num1 = 0;
+		int num2 = 0;
+
+		for (int sw = 1; sw <= 100; sw++) {
+
+			if (sw % 2 == 0) {
+				num1 += sw;
+			}
+
+			else {
+				num2 += sw;
+			}
+		}
+		System.out.println(num1);
+		System.out.println(num2);
+
+	}
+
+}
