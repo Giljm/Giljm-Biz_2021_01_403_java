@@ -1,4 +1,4 @@
-package com.callo.start;
+package com.callor.start;
 
 public class Odd_Even_01 {
 

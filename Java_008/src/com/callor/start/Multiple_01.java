@@ -1,4 +1,4 @@
-package com.callo.start;
+package com.callor.start;
 
 public class Multiple_01 {
 
@@ -12,7 +12,7 @@ public class Multiple_01 {
 			// sw에 7을 더해서 시작해라. ex)) 7 ~ 106
 			int num = sw + 7;
 
-			boolean seven = num % 3 == 0;
+			boolean seven = num % 3 == 0; // = seven = (sw + 7) % 3 == 0;
 
 			if (seven) {
 
@@ -26,3 +26,16 @@ public class Multiple_01 {
 		System.out.println("합 : " + three);
 	}
 }
+
+
+/*
+ * for (int i = 0 ; i <= 100 ; i++)
+ * int num = i + 7
+ * boolean bYes = num % 3 == 0;
+ * 
+ * if (bYes){
+ * }
+ */
+
+
+
