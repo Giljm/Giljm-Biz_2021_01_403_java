@@ -9,7 +9,6 @@ public class Multiple_01 {
 		for(int i = 0 ; i < 100 ; i++) {
 			
 			int num1 = i + 1;
-			
 			// intSum += i; //의미없는 코드
 			
 			boolean bYes3M = num1 % 3 == 0;
