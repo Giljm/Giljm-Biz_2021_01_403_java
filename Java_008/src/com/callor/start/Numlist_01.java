@@ -42,7 +42,7 @@ public class Numlist_01 {
 	
 	for(int i = 0 ; i < 10 ; i++) {
 		int dan = 7;
-		System.out.println(dan + "\tx\t" + i "\t = \t" + (dan * i));
+		System.out.println(dan + "\tx\t" + i + "\t = \t" + (dan * i));
 		
 		System.out.println("===========================");
 		
