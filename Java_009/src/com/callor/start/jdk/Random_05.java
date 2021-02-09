@@ -33,7 +33,7 @@ public class Random_05 {
 			}
 		}
 		System.out.println("짝수의 합 : " + Sum);
-	}
+	} 
 }
 
 /*
