@@ -11,10 +11,10 @@ public class App_02 {
 		System.out.print("숫자입력 >> ");
 		int keyNum1 = scan.nextInt();
 
-		boolean bYes = (keyNum1 > 1 && keyNum1 < 10 );
+		boolean bYes = (keyNum1 > 1 && keyNum1 < 10);
 
 		if (bYes) {
-			
+
 			System.out.println("Good");
 			System.out.println("=============================");
 			System.out.println(" 구구단  (2 ~ 9 까지만 계산)");
@@ -25,11 +25,10 @@ public class App_02 {
 				System.out.println(keyNum1 + " x " + i + " = " + gob);
 			}
 
-		}else {
+		} else {
 			System.out.println("!!!!!!!!");
 
 		}
 
 	}
 }
-
