@@ -49,6 +49,7 @@ public class LupingGame {
 			// 치트키
 			int search = rndNum += 0 ; 
 			System.out.println("답 " + search);
+			
 		
 		}
 	}
