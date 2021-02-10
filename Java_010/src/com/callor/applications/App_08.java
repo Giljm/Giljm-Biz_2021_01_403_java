@@ -5,6 +5,7 @@ import java.util.Scanner;
 import com.callor.applications.myclass.MyGuGuDan;
 
 public class App_08 {
+	
 	public static void main(String[] args) {
 		
 		MyGuGuDan myDan = new MyGuGuDan();
