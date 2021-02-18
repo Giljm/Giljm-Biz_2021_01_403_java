@@ -31,6 +31,7 @@ public class ScoreServiceExtendsV1 extends ScoreServiceV4 {
 	// JDK에 있는 Scanner 라는 클래스를 Import(불러오기)해서 사용
 	// 키보드를 통해 콘솔창에 입력
 	public int input(String subject) { // return을 사용하기 위해서는 int 코드를 사용해야 한다.
+		
 		Scanner scan = new Scanner(System.in);
 
 		int intScore = 0; // intScore는 변수 0을 선언, 초기화.
