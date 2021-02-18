@@ -1,4 +1,4 @@
-package com.callor.applications.CLassServiceV1;
+package com.callor.applications.ServiceV1;
 
 import java.util.Random;
 import java.util.Scanner;

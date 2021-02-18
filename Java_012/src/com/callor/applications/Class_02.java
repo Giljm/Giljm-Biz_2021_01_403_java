@@ -1,6 +1,6 @@
 package com.callor.applications;
 
-import com.callor.applications.CLassServiceV1.ClassServiceV2;
+import com.callor.applications.ServiceV1.ClassServiceV2;
 
 public class Class_02 {
 	public static void main(String[] args) {

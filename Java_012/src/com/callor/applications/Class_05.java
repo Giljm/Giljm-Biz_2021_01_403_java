@@ -78,6 +78,18 @@ public class Class_05 {
 		System.out.printf("%-30s 우리나라\n", "KOR");
 		System.out.printf("%-30s 우리나라\n", "Republic");
 		
+		// 실수표현 : %f
+		// 정수 부분 3자리
+		// 소수점 부분 2자리 (3번째에서 반올림)
+		System.out.printf("%3.2f\n", 30.6666);
+		
+		int dan = 7;
+		for(int i = 1; i < 10; i ++) {
+			
+			System.out.printf("%d x %d = %3d\n",dan,i,dan*i);
+			
+		}
+		
 		// &d일 경우 값보다 자릿수가 부족할경우
 		// 형식이 어긋난다
 		System.out.printf("숫자 : %3d\n",3);
