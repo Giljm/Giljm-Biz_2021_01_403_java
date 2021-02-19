@@ -33,7 +33,8 @@ public class ClassServiceV4 {
 		return "대한민국";
 	}
 
-	//
+	// 매개변수로 받은 값을 그냥 return 하라
+	// 매개변수 (num1을 통해) 받은 값을 그냥 return하라
 	public int result(int num1) {
 		return num1;
 	}
