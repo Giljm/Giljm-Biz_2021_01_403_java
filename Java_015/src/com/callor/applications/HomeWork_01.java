@@ -1,8 +1,8 @@
 package com.callor.applications;
 
-import java.util.Random;
-
 import com.callor.applications.service.PrimeServiceV2;
+
+import java.util.Random;
 
 public class Homework_01 {
 
@@ -15,7 +15,7 @@ public class Homework_01 {
 
 		int index = 0;
 		for (index = 0; index < intNum.length; index++) {
-			intNum[index] = rnd.nextInt();
+			intNum[index] = rnd.nextInt(150) + 1;
 		}
 
 		int[] result = new int[100];
@@ -40,9 +40,9 @@ public class Homework_01 {
 				sum += result[index];
 			}
 		}
-		
+
 		System.out.println("========================");
 		System.out.println("소수들의 합 : " + sum);
-		
+
 	}
 }
