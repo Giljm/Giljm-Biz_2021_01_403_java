@@ -2,33 +2,47 @@ package com.callor.applications;
 
 import java.util.Random;
 
-import com.callor.applications.service.PrimeServiceV2_1;
+import com.callor.applications.service.PrimeServiceV2;
 
-public class HomeWork_01 {
+public class Homework_01 {
 
 	public static void main(String[] args) {
 
-		int[] intNums = new int[10];
-		PrimeServiceV2_1 psV2 = new PrimeServiceV2_1();
+		PrimeServiceV2 psV2 = new PrimeServiceV2();
 		Random rnd = new Random();
 
+		int[] intNum = new int[100];
+
 		int index = 0;
-		for (index = 0; index < intNums.length; index++) {
-			intNums[index] = rnd.nextInt(10) + 2;
-		} // 배열에 임의의 정수 10개를 담음
+		for (index = 0; index < intNum.length; index++) {
+			intNum[index] = rnd.nextInt();
+		}
 
-		psV2.prime(intNums[index]);
+		int[] result = new int[100];
+		for (index = 0; index < intNum.length; index++) {
+			result[index] = psV2.prime(intNum[index]);
+		}
 
-		int[] intSum = new int[10];
-		int result = psV2.prime(intNums[index]);
-		for (index = 0; index < intNums.length; index++) {
-			if (result < 0) {
+		for (index = 0; index < intNum.length; index++) {
+
+			if (result[index] < 0) {
 
 			} else {
-				result += psV2.prime(intNums[index]);
+				System.out.printf("%d은(는) 소수다\n", result[index]);
 			}
-
 		}
-		System.out.println(result);
+
+		int sum = 0;
+		for (index = 0; index < intNum.length; index++) {
+			if (result[index] < 0) {
+
+			} else {
+				sum += result[index];
+			}
+		}
+		
+		System.out.println("========================");
+		System.out.println("소수들의 합 : " + sum);
+		
 	}
 }
