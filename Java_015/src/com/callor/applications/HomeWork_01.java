@@ -14,13 +14,15 @@ public class Homework_01 {
 		int[] Num = new int[100];
 
 		int index = 0;
+		
 		for (index = 0; index < Num.length; index++) {
-			Num[index] = rnd.nextInt(150) + 1;
-		} // 랜덤 2 ~ 150의 값을 intNum 0 ~ 99에 담음.
+			Num[index] = rnd.nextInt(150) + 2;
+		} // 랜덤 2 ~ 150의 값을 Num 0 ~ 99에 담음.
 	      // 임의의 정수 100개 생성.
 
 
 		int[] result = new int[100];
+		
 		for (index = 0; index < Num.length; index++) {
 			result[index] = psV2.prime(Num[index]);
 		} // psV2의 prime() method의 결과를 result 0 ~ 99에 담음.
@@ -28,7 +30,6 @@ public class Homework_01 {
 
 
 		for (index = 0; index < Num.length; index++) {
-
 			if (result[index] < 0) {
 				// prime() method에서 나온 -1이라는 결과의 출력을 걸러줌.
 			} else {
