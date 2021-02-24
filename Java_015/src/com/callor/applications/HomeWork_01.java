@@ -11,19 +11,19 @@ public class Homework_01 {
 		PrimeServiceV2 psV2 = new PrimeServiceV2();
 		Random rnd = new Random();
 
-		int[] intNum = new int[100];
+		int[] Num = new int[100];
 
 		int index = 0;
-		for (index = 0; index < intNum.length; index++) {
-			intNum[index] = rnd.nextInt(150) + 1;
+		for (index = 0; index < Num.length; index++) {
+			Num[index] = rnd.nextInt(150) + 1;
 		}
 
 		int[] result = new int[100];
-		for (index = 0; index < intNum.length; index++) {
-			result[index] = psV2.prime(intNum[index]);
+		for (index = 0; index < Num.length; index++) {
+			result[index] = psV2.prime(Num[index]);
 		}
 
-		for (index = 0; index < intNum.length; index++) {
+		for (index = 0; index < Num.length; index++) {
 
 			if (result[index] < 0) {
 
@@ -33,7 +33,7 @@ public class Homework_01 {
 		}
 
 		int sum = 0;
-		for (index = 0; index < intNum.length; index++) {
+		for (index = 0; index < Num.length; index++) {
 			if (result[index] < 0) {
 
 			} else {
