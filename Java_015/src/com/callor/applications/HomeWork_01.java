@@ -4,7 +4,7 @@ import com.callor.applications.service.PrimeServiceV2;
 
 import java.util.Random;
 
-public class Homework_01 {
+public class HomeWork_01 {
 
 	public static void main(String[] args) {
 
@@ -14,7 +14,6 @@ public class Homework_01 {
 		int[] Num = new int[100];
 
 		int index = 0;
-		
 		for (index = 0; index < Num.length; index++) {
 			Num[index] = rnd.nextInt(150) + 2;
 		} // 랜덤 2 ~ 150의 값을 Num 0 ~ 99에 담음.
