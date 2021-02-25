@@ -27,15 +27,22 @@ public class Score_01 {
 				String strKor = scan.nextLine();
 				try {
 					int intKor = Integer.valueOf(strKor);
-					scoreVO.intKor = intKor;
+					scoreVO.setIntKor(strKor);
 					break;
 
 				} catch (Exception e) {
 					System.out.println("숫자만 입력하세요");
 					continue;
 				}
-
 			}
+
+			System.out.println("영어점수를 입력하세요");
+			System.out.print(">> ");
+			String strEng = scan.nextLine();
+
+			System.out.println("수학점수를 입력하세요");
+			System.out.print(">> ");
+			String strMath = scan.nextLine();
 
 		}
 

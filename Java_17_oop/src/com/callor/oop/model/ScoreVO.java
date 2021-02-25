@@ -1,37 +1,40 @@
 package com.callor.oop.model;
 
-/*
- * value Object 의 인스턴스변수 은닉
- * 인스턴스변수는 public으로 선언하지 않고
- * 보통 private으로 선언을 한다.
- * VO 클래스를 사용하여 선언된 VO 객체는 인스턴스 변수에
- * 직접 접근 할 수 없다.
- * 
- * ScoreVO sVO = new ScoreVO();
- * sVO.strName = "홍길동" // 이런 코드는 사용 불가
- * String name = sVO.strName; // 이 코드도 사용불가
- * 
- * private으로 선언된 인스턴스에 접근하기 위한
- * setter,getter method 들을 통해서 접근해야 한다.
- * 저장할때는 : sVO.setStrName("홍길동");
- * 읽을때는 : name = sVO.getStrName();
- * 
- * 은닉된 인스턴스 변수는 getter, setter method를 통해서 변수에
- * 접근을 한다.
- * 
- * getter, setter method의 코드를 몰라도
- * 
- * 캡슐화
- *  setIntKor() method는 intKor 인스턴스변수에 값을 저장
- *  setIntKor() method는 intKor 인스턴스변수에서 값을 읽기
- *  가능을 한다는 것을 알 수 있다.
- * 
- *  코드 내용이 어떠한지 몰라도
- *  getter와 setter를 통하여 변수에 접근(저장, 읽기) 할 수 있다.
- * 
- * 
- * 
- */
+///*
+// * Value Object 의 인스턴스변수 은닉
+// * 인스턴스변수는 public으로 선언하지 않고
+// * 보통 private으로 선언을 한다.
+// * VO클래스를 사용하여 선언된 vo 객체는 인스턴스 변수에
+// * 직접 접근할 수 없다.
+// * 	ScoreVO sVO = new ScoreVO();
+// *  sVO.strName = "홍길동"; // 이런코드는 사용 불가
+// *  String name = sVO.strName; // 이 코드도 사용불가
+// *  
+// *  private으로 선언된 인스턴스에 접근하기 위한
+// *  	setter, getter method 들을 통해서 접근해야한다
+// *  저장할때는 : sVO.setStrName("홍길동");
+// *  읽을때는 : name = sVO.getStrName();
+// * 
+// * 
+// * 은닉된 인스턴스 변수는 
+// * 		getter, setter method를 통해서 변수에 접근을 한다
+// * 	
+// * 캡슐화
+// * 	getter, setter method의 코드를 몰라도
+// * 	setIntKor() method는 intKor 인스턴스변수에 값을 저장
+// * 	getIntKor() method는 intKor 인스턴스변수에서 값을 읽기
+// * 	기능을 한다는 것을 알수 있다.
+// * 
+// * 	코드 내용이 어떠한지 몰라도
+// * 	getter와 setter를 통하여 변수에 접근(저장, 읽기)할수 있다
+// *  
+// *  
+// * 
+// * 
+// * 
+// * 
+// */
+
 
 public class ScoreVO {
 

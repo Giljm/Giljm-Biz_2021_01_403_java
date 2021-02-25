@@ -15,7 +15,7 @@ public class Product_02 {
 		// 이 과정이 생략되면
 		// 이후 코드에서 NullPointException이 발생한다.
 
-		ProductVO[] pVOs = new ProductVO[5]; //객체 배열
+		ProductVO[] pVOs = new ProductVO[5]; // 객체 배열
 		Scanner scan = new Scanner(System.in);
 
 		for (int i = 0; i < pVOs.length; i++) {
@@ -43,11 +43,11 @@ public class Product_02 {
 			pVOs[i].strDName = scan.nextLine();
 
 			System.out.println("매입단가 입력 >>");
-			int iPrice = scan.nextInt();
+			String iPrice = scan.nextLine();
 			pVOs[i].iPrice = Integer.valueOf(iPrice);
 
 			System.out.println("매출단가 입력 >>");
-			Int oPrice = scan.nextInt();
+			String oPrice = scan.nextLine();
 			pVOs[i].oPrice = Integer.valueOf(oPrice);
 
 			pVOs[i].toString();
