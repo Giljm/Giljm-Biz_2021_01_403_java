@@ -9,7 +9,7 @@ public class CartControllerV5 {
 		CartServiceV1 csV1 = new CartServiceV1();
 
 		csV1.inputCart();
-
+		csV1.printcartList();
 	}
 
 }
