@@ -11,7 +11,7 @@ public class cartServiceV1 implements cartService {
 
 	private List<CartVO> cartList;
 	private Scanner scan;
-	private CartVO cartVO;
+	// 리스트 배열 선언
 
 	public cartServiceV1() {
 
@@ -84,7 +84,7 @@ public class cartServiceV1 implements cartService {
 				}
 			}
 
-			cartVO = new CartVO();
+			CartVO cartVO = new CartVO();
 			cartVO.setUserName(strUserName);
 			cartVO.setProductName(strProductName);
 //			cartVO.setDate(strDate);
@@ -102,14 +102,14 @@ public class cartServiceV1 implements cartService {
 	// 2. 장바구니 전체 리스트 보기
 	public void printCartListAll() {
 
-		System.out.println("* 전체 장바구니 리스트");
+		System.out.println("\n* 전체 장바구니 리스트");
 		System.out.println("\n구매자\t상품명\t단가\t수량\t합계");
 		System.out.println("====================================");
 
 		int nSize = cartList.size();
-		int sum = 0;
-		int i = 0;
-		for (i = 0; i < nSize; i++) {
+		int sum = 0; // sum을 밖으로 빼줘야 입력가능
+
+		for (int i = 0; i < nSize; i++) {
 
 			System.out.print(cartList.get(i).getUserName() + "\t");
 			System.out.print(cartList.get(i).getProductName() + "\t");
@@ -121,7 +121,7 @@ public class cartServiceV1 implements cartService {
 		}
 
 		System.out.println("-----------------------------------");
-		System.out.println("합계\t" + i + "가지\t\t\t" + sum);
+		System.out.println("합계\t" + nSize + "가지\t\t\t" + sum);
 		System.out.println("\n");
 	}
 
@@ -144,11 +144,10 @@ public class cartServiceV1 implements cartService {
 			System.out.println("------------------------------------");
 
 			int nSize = cartList.size();
-			int sum = 0;
-			int i = 0;
+			int sum = 0; // sum을 밖으로 빼줘야 입력가능
 
-			for (i = 0; i < nSize; i++) {
-				// cartList // i 번째 getUserName과 equals를 통해 입력한 name과 비교
+			for (int i = 0; i < nSize; i++) {
+				// cartList // i 번째 getUserName()과 equals를 통해 입력한 name과 비교
 				if (cartList.get(i).getUserName().equals(name)) {
 
 					System.out.print(cartList.get(i).getUserName() + "\t");
@@ -159,13 +158,14 @@ public class cartServiceV1 implements cartService {
 					sum += cartList.get(i).getTotal();
 				} else {
 					System.out.println("비어 있음");
+					System.out.println("-----------------------------------\n");
+					break;
 				}
 
-				System.out.println("-----------------------------------");
-				System.out.println("합계\t" + i + "가지\t\t" + sum);
-				System.out.println("\n");
-
 			}
+			System.out.println("-----------------------------------");
+			System.out.println("합계\t" + nSize + "가지\t\t\t" + sum);
+			System.out.println("\n");
 			break;
 		}
 	}
