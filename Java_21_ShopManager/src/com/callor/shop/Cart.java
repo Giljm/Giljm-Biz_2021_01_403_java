@@ -10,22 +10,21 @@ public class Cart {
 	public static void main(String[] args) {
 
 		cartService mService = new cartServiceV1();
-
-		// 메뉴 선택
 		menuService sService = new menutServiceV1();
-
-		// 메뉴 선택의 selectService 함수를 Integer type의 select에 담는다.
 
 		while (true) {
 			Integer select = sService.selectService();
+			// 메뉴 선택 함수를 select에 담음
+			// Integer로 해야 null이랑 정수를 담을 수 있음
 
 			if (select == null) {
 				break;
+				// selecetService() method에서 null이 오면 멈추게 함
 			}
 
 			if (select == 1) {
 				mService.inputCartList();
-				continue;
+				continue; // continue를 통해 다시 while로 돌아가서 다음에 뭐 할지 물어봄
 
 			} else if (select == 2) {
 				mService.printCartListAll();
@@ -35,6 +34,8 @@ public class Cart {
 				mService.printCartSelectList();
 				continue;
 			}
-		}
-	}
+
+		} // end while
+
+	} // end main
 }
