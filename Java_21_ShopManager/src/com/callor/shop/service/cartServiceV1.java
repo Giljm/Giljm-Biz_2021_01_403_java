@@ -50,8 +50,8 @@ public class cartServiceV1 implements cartService {
 //		System.out.println("추가 시각");
 //		strTime = scan.nextLine();
 
+			// 유효성 검사
 			while (true) {
-
 				try {
 					System.out.println("수량");
 					String strQty = scan.nextLine();
@@ -118,10 +118,11 @@ public class cartServiceV1 implements cartService {
 			sum += menuList.get(i).getTotal();
 
 		}
+		
 		System.out.println("-----------------------------------");
 		System.out.println("합계\t" + i + "가지\t\t\t" + sum);
 		System.out.println("\n");
-	}
+	} 
 
 	@Override
 	// 3. 구매자별 장바구니 리스트 보기
@@ -159,7 +160,5 @@ public class cartServiceV1 implements cartService {
 			System.out.println("\n");
 
 		}
-		System.out.println("\n");
 	}
-
 }

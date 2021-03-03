@@ -11,7 +11,7 @@ public class menutServiceV1 implements menuService {
 	public menutServiceV1() {
 
 		scan = new Scanner(System.in);
-
+		// 스캔 초기화
 	}
 
 	@Override
@@ -36,7 +36,8 @@ public class menutServiceV1 implements menuService {
 					break;
 					// 종료 메세지 출력
 				}
-				Integer intMenu = Integer.valueOf(strMenu);
+				
+				int intMenu = Integer.valueOf(strMenu);
 
 				// 1 ~ 3 값을 입력
 				if (intMenu >= 1 && intMenu <= 3) {
@@ -46,8 +47,8 @@ public class menutServiceV1 implements menuService {
 					continue;
 				}
 			} catch (Exception e) {
-				System.out.println("업무 선택은 QUIT(끝내기), 1 ~ 3 까지 정수만 입력할 수 있습니다.");
-			}
+				System.out.println("\n업무 선택은 QUIT(끝내기), 1 ~ 3 까지 정수만 입력할 수 있습니다.\n");
+			} // catch 문이 끝내도 while문 재실행
 
 		}
 		// 1 ~ 3 을 가져올 경우
