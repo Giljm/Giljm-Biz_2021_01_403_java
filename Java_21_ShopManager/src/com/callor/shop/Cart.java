@@ -9,8 +9,6 @@ public class Cart {
 
 	public static void main(String[] args) {
 
-		// 카트에 담을 상품 입력
-		// 카트에 담은 상품 출력
 		cartService mService = new cartServiceV1();
 
 		// 메뉴 선택
