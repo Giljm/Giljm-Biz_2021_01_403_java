@@ -30,11 +30,13 @@ public class menutServiceV1 implements menuService {
 			try {
 				System.out.print("명령어 입력 >> ");
 				String strMenu = scan.nextLine();
-
+				// 입력해서 strMenu에 저장
+					
 				if (strMenu.equals("QUIT")) {
+					// 입력해서 저장된 strMenu와 QUIT가 같냐
 					System.out.println("종료");
 					break;
-					// 종료 메세지 출력
+					// 종료 메세지 출력하고 break;
 				}
 				
 				int intMenu = Integer.valueOf(strMenu);
@@ -50,8 +52,9 @@ public class menutServiceV1 implements menuService {
 				System.out.println("\n업무 선택은 QUIT(끝내기), 1 ~ 3 까지 정수만 입력할 수 있습니다.\n");
 			} // catch 문이 끝내도 while문 재실행
 
-		}
-		// 1 ~ 3 을 가져올 경우
+		} // end while
+		
+		// 1 ~ 3을 입력할 경우 통과해서 메인에 전달
 
 		return null;
 
