@@ -102,6 +102,7 @@ public class cartServiceV1 implements cartService {
 	// 2. 장바구니 전체 리스트 보기
 	public void printCartListAll() {
 
+		System.out.println("* 전체 장바구니 리스트");
 		System.out.println("\n구매자\t상품명\t단가\t수량\t합계");
 		System.out.println("====================================");
 
@@ -137,15 +138,15 @@ public class cartServiceV1 implements cartService {
 		// 입력한 값을 문자형 name에 담음
 
 		while (true) {
-			System.out.println("\n* " + name + "장바구니리스트");
+			System.out.println("\n* " + name + " 장바구니리스트");
 			System.out.println("====================================");
-			System.out.println("구매자\t상품명\t단가\t수량\t합계\n");
+			System.out.println("구매자\t상품명\t단가\t수량\t합계");
 			System.out.println("------------------------------------");
 
 			int nSize = cartList.size();
 			int sum = 0;
 			int i = 0;
-			
+
 			for (i = 0; i < nSize; i++) {
 				// cartList // i 번째 getUserName과 equals를 통해 입력한 name과 비교
 				if (cartList.get(i).getUserName().equals(name)) {
