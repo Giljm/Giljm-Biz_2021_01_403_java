@@ -156,12 +156,11 @@ public class cartServiceV1 implements cartService {
 					System.out.print(cartList.get(i).getPrice() + "\t");
 					System.out.println(cartList.get(i).getTotal() + "\t");
 					sum += cartList.get(i).getTotal();
-				} else {
+				} else { // 비교문이 다르면 이렇게 출력
 					System.out.println("비어 있음");
 					System.out.println("-----------------------------------\n");
-					break;
 				}
-
+				break;
 			}
 			System.out.println("-----------------------------------");
 			System.out.println("합계\t" + nSize + "가지\t\t\t" + sum);
