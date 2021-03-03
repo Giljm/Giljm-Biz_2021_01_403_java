@@ -2,13 +2,13 @@ package com.callor.shop.service;
 
 import java.util.Scanner;
 
-import com.callor.shop.service.inter.selectService;
+import com.callor.shop.service.inter.menuService;
 
-public class selectServiceV1 implements selectService {
+public class menutServiceV1 implements menuService {
 
 	private Scanner scan;
 
-	public selectServiceV1() {
+	public menutServiceV1() {
 
 		scan = new Scanner(System.in);
 
@@ -51,7 +51,7 @@ public class selectServiceV1 implements selectService {
 
 		}
 		// 1 ~ 3 을 가져올 경우
-		
+
 		return null;
 
 	}

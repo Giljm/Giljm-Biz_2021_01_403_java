@@ -1,9 +1,9 @@
 package com.callor.shop;
 
-import com.callor.shop.service.menuServiceV1;
-import com.callor.shop.service.selectServiceV1;
+import com.callor.shop.service.cartServiceV1;
+import com.callor.shop.service.menutServiceV1;
+import com.callor.shop.service.inter.cartService;
 import com.callor.shop.service.inter.menuService;
-import com.callor.shop.service.inter.selectService;
 
 public class Cart {
 
@@ -11,10 +11,10 @@ public class Cart {
 
 		// 카트에 담을 상품 입력
 		// 카트에 담은 상품 출력
-		menuService mService = new menuServiceV1();
+		cartService mService = new cartServiceV1();
 
 		// 메뉴 선택
-		selectService sService = new selectServiceV1();
+		menuService sService = new menutServiceV1();
 
 		// 메뉴 선택의 selectService 함수를 Integer type의 select에 담는다.
 

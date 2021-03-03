@@ -5,16 +5,16 @@ import java.util.List;
 import java.util.Scanner;
 
 import com.callor.shop.model.CartVO;
-import com.callor.shop.service.inter.menuService;
+import com.callor.shop.service.inter.cartService;
 
-public class menuServiceV1 implements menuService {
+public class cartServiceV1 implements cartService {
 
 	private static final String String = null;
 	private List<CartVO> menuList;
 	private Scanner scan;
 	private CartVO cartVO;
 
-	public menuServiceV1() {
+	public cartServiceV1() {
 
 		menuList = new ArrayList<CartVO>();
 		scan = new Scanner(System.in);
@@ -30,10 +30,10 @@ public class menuServiceV1 implements menuService {
 		String strTime;
 		int intQty = 0;
 		int intPrice = 0;
+
 		// while문 이 끝나면 안에 담긴 값이
 		// 소멸되기때문에 밖에다 빼놓음
-		
-		
+
 		while (true) {
 			System.out.println("\n상품정보 입력");
 			System.out.println("==============");
@@ -106,15 +106,20 @@ public class menuServiceV1 implements menuService {
 		System.out.println("====================================");
 
 		int nSize = menuList.size();
-		for (int i = 0; i < nSize; i++) {
+		int sum = 0;
+		int i = 0;
+		for (i = 0; i < nSize; i++) {
 
 			System.out.print(menuList.get(i).getUserName() + "\t");
 			System.out.print(menuList.get(i).getProductName() + "\t");
 			System.out.print(menuList.get(i).getQty() + "\t");
 			System.out.print(menuList.get(i).getPrice() + "\t");
 			System.out.println(menuList.get(i).getTotal() + "\t");
+			sum += menuList.get(i).getTotal();
 
 		}
+		System.out.println("-----------------------------------");
+		System.out.println("합계\t" + i + "가지\t\t\t" + sum);
 		System.out.println("\n");
 	}
 
@@ -135,8 +140,9 @@ public class menuServiceV1 implements menuService {
 		System.out.println("------------------------------------");
 
 		int nSize = menuList.size();
-
-		for (int i = 0; i < nSize; i++) {
+		int sum = 0;
+		int i = 0;
+		for (i = 0; i < nSize; i++) {
 
 			if (menuList.get(i).getUserName().equals(name)) {
 
@@ -145,8 +151,13 @@ public class menuServiceV1 implements menuService {
 				System.out.print(menuList.get(i).getQty() + "\t");
 				System.out.print(menuList.get(i).getPrice() + "\t");
 				System.out.println(menuList.get(i).getTotal() + "\t");
-
+				sum += menuList.get(i).getTotal();
 			}
+
+			System.out.println("-----------------------------------");
+			System.out.println("합계\t" + i + "가지\t\t" + sum);
+			System.out.println("\n");
+
 		}
 		System.out.println("\n");
 	}
