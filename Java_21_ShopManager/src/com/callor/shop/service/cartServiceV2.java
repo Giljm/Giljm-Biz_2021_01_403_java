@@ -58,6 +58,7 @@ public class cartServiceV2 implements cartService {
 				String strQty = scan.nextLine();
 				intQty = Integer.valueOf(strQty);
 				// if문에서 정수와 비교하기 위해 타입변환
+				// cartVO가 int 형이라 변환
 
 				if (intQty < 1) {
 					System.out.println("수량은 1개 이상 입력하세요.");

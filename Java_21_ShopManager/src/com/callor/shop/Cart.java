@@ -9,7 +9,7 @@ public class Cart {
 
 	public static void main(String[] args) {
 
-		// 인터페이스 // 이름 // service 클래스 가져옴
+		// 인터페이스 // 이름  // service 클래스 가져옴
 		cartService mService = new cartServiceV1();
 		menuService sService = new menutServiceV1();
 
@@ -25,15 +25,12 @@ public class Cart {
 
 			if (select == 1) {
 				mService.inputCartList();
-				continue; // continue를 통해 다시 while로 돌아가서 다음에 뭐 할지 물어봄
 
 			} else if (select == 2) {
 				mService.printCartListAll();
-				continue;
 
 			} else if (select == 3) {
 				mService.printCartSelectList();
-				continue;
 			}
 
 		} // end while
