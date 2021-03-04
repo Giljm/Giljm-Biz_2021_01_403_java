@@ -9,6 +9,7 @@ public class Cart {
 
 	public static void main(String[] args) {
 
+		// 인터페이스 // 이름 // service 클래스 가져옴
 		cartService mService = new cartServiceV1();
 		menuService sService = new menutServiceV1();
 
