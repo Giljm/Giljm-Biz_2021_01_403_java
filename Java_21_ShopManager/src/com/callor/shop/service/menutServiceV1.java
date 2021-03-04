@@ -36,6 +36,7 @@ public class menutServiceV1 implements menuService {
 					// 입력해서 저장된 strMenu와 QUIT가 같는지 비교
 					System.out.println("종료");
 					break;
+					// while로 묶어져 있기 때문에
 					// 종료 메세지 출력하고 break;
 				}
 
