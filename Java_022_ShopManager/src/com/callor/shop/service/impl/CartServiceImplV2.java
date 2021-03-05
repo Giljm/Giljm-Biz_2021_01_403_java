@@ -51,7 +51,7 @@ public class CartServiceImplV2 extends CartServiceImplV1 implements CartServiceV
 		// 1. 데이터를 저장할 파일 생성
 		// FileWriter 클래스를 사용하여 객체 선언
 		FileWriter fileWriter = null;
-		// 파일와이터라는 클래스를 이용해서 파일와이터라는 객체를 선언만 함
+		// FileWriter라는 클래스를 이용해서 fileWriter라는 객체를 선언만 함
 		
 		// 2. FileWriter에 데이터를 전송하기 위하여
 		// PrintWriter 클래스를 사용하여 print 객체선언

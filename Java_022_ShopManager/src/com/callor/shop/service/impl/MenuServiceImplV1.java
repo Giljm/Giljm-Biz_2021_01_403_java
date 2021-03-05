@@ -21,10 +21,10 @@ public class MenuServiceImplV1 implements MenuService {
 
 	private final Scanner scan;
 	// 프라이베이트로 선언
-	
+
 	public MenuServiceImplV1() {
 		scan = new Scanner(System.in);
-		
+
 	}
 
 	@Override
