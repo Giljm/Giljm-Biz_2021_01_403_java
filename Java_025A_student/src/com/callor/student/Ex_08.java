@@ -18,14 +18,20 @@ public class Ex_08 {
 		Random rnd = new Random();
 
 		for (int i = 0; i < num.length; i++) {
-			num[i] = rnd.nextInt(100) + 10;
 
-			if (num[i] % 1 == 0 && num[i] / num[i] == 1) {
-				System.out.println(num[i]);
+			num[i] = rnd.nextInt(91) + 10;
+			int count = 0;
+
+			for (int j = 2; j < num[i]; j++) {
+
+				if (num[i] % j == 0) {
+					break;
+				} else {
+					count++;
+				}
+
 			}
-
+			System.out.println(count + " : 소수");
 		}
-
 	}
-
 }

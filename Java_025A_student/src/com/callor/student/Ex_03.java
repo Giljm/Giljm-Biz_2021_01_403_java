@@ -7,7 +7,7 @@ public class Ex_03 {
 		int intSum = 0;
 		for (int i = 0; i < 100; i++) {
 
-			intSum += i;
+			intSum += i + 1;
 
 		}
 
